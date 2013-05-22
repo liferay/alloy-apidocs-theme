@@ -25,10 +25,10 @@ html {
 }
 
 body {
-    /*font: 13px/1.4 'Lucida Grande', 'Lucida Sans Unicode', 'DejaVu Sans', 'Bitstream Vera Sans', 'Helvetica', 'Arial', sans-serif;*/
-    font: 13px/1.4 'Helvetica', 'Arial', sans-serif;
+    font-size: 12px;
     margin: 0;
     padding: 0;
+    padding-top: 40px;
 }
 
 /* -- Links ----------------------------------------------------------------- */
@@ -95,7 +95,6 @@ h5, h6 { font-size: 107.692%; }
 code, kbd, pre, samp {
     font-family: Menlo, Monaco, 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
     font-size: 92.308%;
-    line-height: 1.35;
 }
 
 p code, p kbd, p samp {
@@ -192,11 +191,6 @@ th {
 
 .sidebar {
     padding: 0 15px 0 10px;
-}
-#bd {
-    padding: 7px 0 130px;
-    position: relative;
-    width: 99%;
 }
 
 /* -- Table of Contents ----------------------------------------------------- */
@@ -311,13 +305,13 @@ abbr {
     cursor: help;
 }
 
-.prettyprint li.L0, 
-.prettyprint li.L1, 
-.prettyprint li.L2, 
-.prettyprint li.L3, 
-.prettyprint li.L5, 
-.prettyprint li.L6, 
-.prettyprint li.L7, 
+.prettyprint li.L0,
+.prettyprint li.L1,
+.prettyprint li.L2,
+.prettyprint li.L3,
+.prettyprint li.L5,
+.prettyprint li.L6,
+.prettyprint li.L7,
 .prettyprint li.L8 {
     list-style: decimal;
 }
@@ -451,14 +445,12 @@ h2, h3, h4, h5, h6 {
 }
 
 /* Loading spinners. */
-#bd.loading .apidocs,
-#api-list.loading .yui3-tabview-panel {
+#bd.loading .apidocs {
     background: #fff url(../img/spinner.gif) no-repeat center 70px;
     min-height: 150px;
 }
 
-#bd.loading .apidocs .content,
-#api-list.loading .yui3-tabview-panel .apis {
+#bd.loading .apidocs .content {
     display: none;
 }
 
@@ -573,8 +565,8 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 
 .apidocs .item {
     border-bottom: 1px solid #efefef;
-    margin: 1.5em 0 2em;
-    padding-bottom: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .apidocs .item h4,
@@ -623,6 +615,10 @@ kbd .cmd { font-family: Monaco, Helvetica; }
     padding: 0;
 }
 
+.apidocs .param .param-description {
+    padding-top: 2px;
+}
+
 .apidocs .param { margin-bottom: 1em; }
 
 .apidocs .param .type,
@@ -654,6 +650,10 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 .apidocs .constructor .item {
     border: none;
     padding-bottom: 0;
+}
+
+.apidocs .constructor {
+    padding-bottom: 10px;
 }
 
 /* -- File Source View ------------------------------------------------------ */
@@ -719,12 +719,12 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 }
 
 /* -- API options ----------------------------------------------------------- */
-#api-options {
+/*#api-options {
     font-size: 11px;
     margin-top: 2.2em;
     position: absolute;
     right: 1.5em;
-}
+}*/
 
 /*#api-options label { margin-right: 0.6em; }*/
 
@@ -781,3 +781,96 @@ kbd .cmd { font-family: Monaco, Helvetica; }
     font-weight: bold;
 }
 
+.form-inline label {
+    line-height: 20px;
+}
+
+/* -- Navigation Bar -------------------------------------------------------- */
+
+.navbar .nav {
+    margin-left: -50px;
+}
+
+.navbar .navbar-inner .brand {
+    height: 40px;
+    margin: 0;
+    padding: 0 5px 0 10px;
+    cursor: default;
+    padding: 10px 16px 10px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 0;
+}
+
+.navbar-text {
+    font-size: 12px;
+    padding-left: 5px;
+    cursor: default;
+}
+
+.navbar-form {
+    margin-right: 3px;
+}
+
+#api-options {
+    margin-top: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+#api-options label {
+    font-size: 12px;
+}
+
+#api-options input {
+    vertical-align: top;
+}
+
+/* -- Sidebar --------------------------------------------------------------- */
+
+#sidebar .tab-content {
+    border: 1px solid #DFDFDF;
+    border-top: 0px;
+    padding-bottom: 5px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+#api-tabview-filter input {
+    width: 94.5%;
+}
+
+#sidebar .tab-pane li a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#sidebar .tab-pane li a:hover,
+#sidebar .tab-pane li a:focus {
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #0088cc;
+}
+
+/* -- Content --------------------------------------------------------------- */
+
+#docs-main {
+    margin-top: 65px;
+}
+
+.content {
+    padding-bottom: 50px;
+}
+
+.content .page-header h1 small {
+    padding-left: 5px;
+}
+
+.content .well:not(.moduledesc) p {
+    margin: 9px 0;
+}

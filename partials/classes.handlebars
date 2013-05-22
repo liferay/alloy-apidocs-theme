@@ -1,8 +1,11 @@
-<h1>{{name}} Class</h1>
-<div class="box meta">
+<div class="page-header">
+    <h1>{{name}} <small>Class</small></h1>
+</div>
+
+<div class="well well-small">
     {{#if uses}}
         <div class="uses">
-            Uses
+            Uses:
             <ul class="inline commas">
                 {{#uses}}
                     <li><a href="{{.}}.html">{{.}}</a></li>
@@ -13,7 +16,7 @@
 
     {{#if extends}}
         <div class="extends">
-            Extends {{#crossLink extends}}{{/crossLink}}
+            Extends: {{#crossLink extends}}{{/crossLink}}
         </div>
     {{/if}}
 
@@ -38,7 +41,7 @@
 </div>
 
 {{#if deprecated}}
-    <div class="box deprecated">
+    <div class="well well-small deprecated">
         <p>
         {{#if deprecationMessage}}
             <strong>Deprecated:</strong> {{deprecationMessage}}
@@ -49,7 +52,7 @@
     </div>
 {{/if}}
 
-<div class="box intro">
+<div class="well well-small intro">
     {{{classDescription}}}
 </div>
 
@@ -80,7 +83,7 @@
 
     <div>
         <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
+            <!-- <h2 class="off-left">Item Index</h2> -->
 
             {{#if methods}}
                 <div class="index-section methods">
