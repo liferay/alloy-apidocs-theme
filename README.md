@@ -2,6 +2,8 @@
 
 [AlloyUI API Docs](http://alloyui.com/api/) are generated with [YUIDoc](http://yui.github.io/yuidoc/), this is a custom theme for it based on [Bootstrap](http://github.com/liferay/alloy-twitter-bootstrap).
 
+![Screenshot](http://cl.ly/image/1x3L1J0y3S18/apidocs.jpg)
+
 ## Usage
 
 To develop and build this theme you'll need [Yogi Alloy](https://github.com/liferay/yogi-alloy), check [how to](https://github.com/liferay/yogi-alloy#api-docs).
@@ -16,7 +18,7 @@ To develop and build this theme you'll need [Yogi Alloy](https://github.com/life
 
 ## History
 
-* **v0.0.3** May 22, 2013
+* **v0.0.3** May 23, 2013
 	* Added [Travis](https://travis-ci.org/zenorocha/alloy-yuidoc-theme) continous integration
   * Added [YUI Lint](https://github.com/yui/yui-lint) config file
   * Used AUI tabs instead of YUI
