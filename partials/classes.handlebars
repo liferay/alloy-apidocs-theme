@@ -63,8 +63,8 @@
     </div>
 {{/is_constructor}}
 
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
+<div id="classdocs">
+    <ul class="api-class-tabs nav nav-tabs">
         <li class="api-class-tab index"><a href="#index">Index</a></li>
 
         {{#if methods}}
@@ -82,7 +82,7 @@
     </ul>
 
     <div>
-        <div id="index" class="api-class-tabpanel index">
+        <div id="index" class="api-class-tabpanel index tab-pane">
             <!-- <h2 class="off-left">Item Index</h2> -->
 
             {{#if methods}}
@@ -107,7 +107,7 @@
             {{/if}}
 
             {{#if properties}}
-                <div class="index-section properties">
+                <div class="index-section properties tab-pane">
                     <h3>Properties</h3>
 
                     <ul class="index-list properties{{#if extends}} extends{{/if}}">
@@ -128,7 +128,7 @@
             {{/if}}
 
             {{#if attrs}}
-                <div class="index-section attrs">
+                <div class="index-section attrs tab-pane">
                     <h3>Attributes</h3>
 
                     <ul class="index-list attrs{{#if extends}} extends{{/if}}">
@@ -142,7 +142,7 @@
             {{/if}}
 
             {{#if events}}
-                <div class="index-section events">
+                <div class="index-section events tab-pane">
                     <h3>Events</h3>
 
                     <ul class="index-list events{{#if extends}} extends{{/if}}">
@@ -164,7 +164,7 @@
         </div>
 
         {{#if methods}}
-            <div id="methods" class="api-class-tabpanel">
+            <div id="methods" class="api-class-tabpanel tab-pane">
                 <h2 class="off-left">Methods</h2>
 
                 {{#methods}}
@@ -174,7 +174,7 @@
         {{/if}}
 
         {{#if properties}}
-            <div id="properties" class="api-class-tabpanel">
+            <div id="properties" class="api-class-tabpanel tab-pane">
                 <h2 class="off-left">Properties</h2>
 
                 {{#properties}}
@@ -184,7 +184,7 @@
         {{/if}}
 
         {{#if attrs}}
-            <div id="attrs" class="api-class-tabpanel">
+            <div id="attrs" class="api-class-tabpanel tab-pane">
                 <h2 class="off-left">Attributes</h2>
 
                 {{#attrs}}
@@ -194,7 +194,7 @@
         {{/if}}
 
         {{#if events}}
-            <div id="events" class="api-class-tabpanel">
+            <div id="events" class="api-class-tabpanel tab-pane">
                 <h2 class="off-left">Events</h2>
 
                 {{#events}}

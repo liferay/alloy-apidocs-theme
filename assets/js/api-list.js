@@ -247,5 +247,5 @@ function onTabSwitchKey(e) {
 }
 
 }, '3.4.0', {requires: [
-    'api-filter', 'api-search', 'event-key', 'node-focusmanager', 'tabview'
+    'api-filter', 'api-search', 'event-key', 'node-focusmanager', 'aui-tabview'
 ]});

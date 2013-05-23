@@ -231,7 +231,7 @@ pjax.updateTabState = function (src) {
                 if (classTabView.get('rendered')) {
                     Y.Widget.getByNode(tab).set('selected', 1);
                 } else {
-                    tab.addClass('yui3-tab-selected');
+                    tab.addClass('tab-selected');
                 }
             }
         }
@@ -255,7 +255,7 @@ pjax.updateTabState = function (src) {
         if (classTabView.get('rendered')) {
             Y.Widget.getByNode(tab).set('selected', 1);
         } else {
-            tab.addClass('yui3-tab-selected');
+            tab.addClass('tab-selected');
         }
     }
 };
@@ -310,7 +310,7 @@ pjax.onNavigate = function (e) {
         tab;
 
     if (hash) {
-        tab = originTarget && originTarget.ancestor('.yui3-tab', true);
+        tab = originTarget && originTarget.ancestor('.nav-tabs', true);
 
         if (hash === win.location.hash) {
             pjax.updateTabState('hashchange');
