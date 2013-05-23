@@ -66,7 +66,7 @@ pjax = new Y.Pjax({
 // -- Utility Functions --------------------------------------------------------
 
 pjax.checkVisibility = function (tab) {
-    tab || (tab = selectedTab);
+    tab = tab || (tab = selectedTab);
 
     if (!tab) { return; }
 
@@ -328,7 +328,7 @@ pjax.onNavigate = function (e) {
     bdNode.addClass('loading');
 };
 
-pjax.onOptionClick = function (e) {
+pjax.onOptionClick = function () {
     pjax.updateVisibility();
 };
 
@@ -363,7 +363,7 @@ Y.APIList.rootPath = pjax.get('root');
 
 Y.one('#api-options').delegate('click', pjax.onOptionClick, 'input');
 
-Y.on('hashchange', function (e) {
+Y.on('hashchange', function () {
     pjax.updateTabState('hashchange');
 }, win);
 
