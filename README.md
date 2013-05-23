@@ -1,6 +1,6 @@
-# YUIDoc Theme for AlloyUI
+# YUIDoc Theme for AlloyUI [![Build Status](https://secure.travis-ci.org/zenorocha/alloy-yuidoc-theme.png?branch=master)](https://travis-ci.org/zenorocha/alloy-yuidoc-theme)
 
-[AlloyUI API Docs](http://alloyui.com/api/) are generated with [YUIDoc](http://yui.github.io/yuidoc/), this is a custom theme for it.
+[AlloyUI API Docs](http://alloyui.com/api/) are generated with [YUIDoc](http://yui.github.io/yuidoc/), this is a custom theme for it based on [Bootstrap](http://github.com/liferay/alloy-twitter-bootstrap).
 
 ## Usage
 
@@ -17,12 +17,14 @@ To develop and build this theme you'll need [Yogi Alloy](https://github.com/life
 ## History
 
 * **v0.0.3** May 22, 2013
-	* Use AUI tabs instead of YUI
-	* Use AUI seed file instead of YUI
+	* Added [Travis](https://travis-ci.org/zenorocha/alloy-yuidoc-theme) continous integration
+  * Added [YUI Lint](https://github.com/yui/yui-lint) config file
+  * Used AUI tabs instead of YUI
+	* Used AUI seed file instead of YUI
 * **v0.0.2** May 22, 2013
-	* Use Bootstrap's markup and style instead of YUI's
+	* Used Bootstrap's markup and style instead of YUI's
 * **v0.0.1** May 21, 2013
-	* Clone YUIDoc's [default theme](https://github.com/yui/yuidoc/tree/master/themes/default)
+	* Cloned YUIDoc's [default theme](https://github.com/yui/yuidoc/tree/master/themes/default)
 
 ## Credits
 
