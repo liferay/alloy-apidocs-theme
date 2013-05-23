@@ -34,4 +34,4 @@ Inspired by Kevin Lakotko's [YUIDoc theme with Bootstrap](https://github.com/kev
 
 ## License
 
-[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
+[BSD License](https://github.com/zenorocha/alloy-yuidoc-theme/blob/master/LICENSE.md) © Zeno Rocha
