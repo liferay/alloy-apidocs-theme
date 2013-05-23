@@ -1,14 +1,10 @@
 # YUIDoc Theme for AlloyUI
 
-TODO: Write a project description
-
-## Installation
-
-TODO: Describe the installation process
+[AlloyUI API Docs](http://alloyui.com/api/) are generated with [YUIDoc](http://yui.github.io/yuidoc/), this is a custom theme for it.
 
 ## Usage
 
-TODO: Write usage instructions
+To develop and build this theme you'll need [Yogi Alloy](https://github.com/liferay/yogi-alloy), check [how to](https://github.com/liferay/yogi-alloy#api-docs).
 
 ## Contributing
 
