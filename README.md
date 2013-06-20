@@ -1,6 +1,6 @@
-# YUIDoc Theme for AlloyUI [![Build Status](https://secure.travis-ci.org/zenorocha/alloy-yuidoc-theme.png?branch=master)](https://travis-ci.org/zenorocha/alloy-yuidoc-theme)
+# API Docs Theme for AlloyUI [![Build Status](https://secure.travis-ci.org/zenorocha/alloy-yuidoc-theme.png?branch=master)](https://travis-ci.org/zenorocha/alloy-yuidoc-theme)
 
-[AlloyUI API Docs](http://alloyui.com/api/) are generated with [YUIDoc](http://yui.github.io/yuidoc/), this is a custom theme for it based on [Bootstrap](http://github.com/liferay/alloy-twitter-bootstrap).
+[AlloyUI API Docs](http://alloyui.com/api/) are generated with [YUIDoc](http://yui.github.io/yuidoc/). This is a custom theme for YUIDoc based on [Bootstrap](http://github.com/liferay/alloy-bootstrap).
 
 ![Screenshot](http://cl.ly/image/1x3L1J0y3S18/apidocs.jpg)
 
@@ -34,4 +34,4 @@ Inspired by Kevin Lakotko's [YUIDoc theme with Bootstrap](https://github.com/kev
 
 ## License
 
-[BSD License](https://github.com/zenorocha/alloy-yuidoc-theme/blob/master/LICENSE.md) © Zeno Rocha
+[BSD License](https://github.com/zenorocha/alloy-yuidoc-theme/blob/master/LICENSE.md)
